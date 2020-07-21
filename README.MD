@@ -1,9 +1,9 @@
-#Frontend Stack
+# Frontend Stack
 - Angular
 - Angular Material
 - Bootstrap
 
-#Backend Stack
+# Backend Stack
 - Spring Boot
 - Spring Data MongoDB
 - Spring WebFlux
