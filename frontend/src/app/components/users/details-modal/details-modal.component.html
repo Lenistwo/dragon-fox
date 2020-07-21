@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>User Details</h1>
+<mat-dialog-content>
+  <h3>ID: {{selectedUser.id}}</h3>
+  <h3>Username: {{selectedUser.username}}</h3>
+  <h3>Role: {{selectedUser.role}}</h3>
+</mat-dialog-content>
+<div mat-dialog-actions class="justify-content-between">
+  <button mat-button class="btn btn-warning float-left" (click)="toggleClose()">Close</button>
+  <button mat-button class="btn btn-warning">Edit</button>
+</div>

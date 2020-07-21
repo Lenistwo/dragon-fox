@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem; float: left;margin-left: 10px; margin-top: 50px"
+     *ngFor="let post of posts | async">
+  <img class="card-img-top" [src]="post.image" alt="Image">
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}
+    </h5>
+    <p class="card-text">{{'Content: ' + post.content}}</p>
+    <app-like-button [post]="post"></app-like-button>
+    <button mat-raised-button class="bg-secondary" (click)="openModal(post)">Details</button>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div>
+  <mat-card class="form">
+    <mat-card-title>Register</mat-card-title>
+    <form [formGroup]="registerForm">
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input matInput type="text" placeholder="Insert your username" formControlName="username">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="Insert your email" formControlName="email">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Insert your password" formControlName="password">
+        </mat-form-field>
+        <br>
+        <mat-checkbox formControlName="terms">Accept Terms</mat-checkbox>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="float-right btn-outline-info bg-secondary" mat-raised-button [disabled]="valid()" (click)="register()">Register</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

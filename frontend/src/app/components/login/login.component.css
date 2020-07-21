@@ -1,0 +1,10 @@
+.xd {
+  width: 9%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  transform: translateY(50%);
+  -webkit-box-shadow: 3px -1px 17px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px -1px 17px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px -1px 17px 2px rgba(0, 0, 0, 0.75);
+}

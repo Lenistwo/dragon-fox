@@ -1,0 +1,21 @@
+<br>
+<table class="table table-dark">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Username</th>
+    <th scope="col">Role</th>
+    <th scope="col">Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of user | async; let i=index">
+    <td>{{i}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.role}}</td>
+    <td>
+      <button class="btn btn-warning" (click)="toggleDetailsModal(user)">Details</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

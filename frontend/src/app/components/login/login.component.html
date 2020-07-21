@@ -1,0 +1,22 @@
+<div>
+  <mat-card class="xd">
+    <mat-card-title>Login</mat-card-title>
+    <form class="" [formGroup]="loginGroup">
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>Login</mat-label>
+          <input matInput type="text" placeholder="Insert your username" value="{{auth}}" formControlName="username">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Insert your password" formControlName="password">
+        </mat-form-field>
+        <a routerLink="/register">You dont have a account?</a>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="float-right" mat-raised-button [disabled]="valid()" (click)="onSubmit()">Login</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>
